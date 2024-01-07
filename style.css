@@ -1,0 +1,107 @@
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+html {
+    color-scheme: dark light;
+    hanging-punctuation: first last;
+}
+
+html:focus-within{
+    scroll-behavior: smooth;
+}
+
+a:not([class]){
+    text-decoration-skip-ink: auto;
+}
+
+img, picture, svg, video, canvas{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input, button, textarea, select{
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce){
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
+}
+
+@media (presers-reduced-motion: no-preference) {
+    html:focus-within, :has(:target) {
+        scroll-behavior: smooth;
+    }
+}
+
+body, html{
+    scroll-padding-top: 3rem;
+}
+
+body {
+    min-height: 100svh;
+
+    main {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 76px;
+        padding-inline: 20%;
+
+        h1 {
+            font-size: 4rem;
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+    font-family: "Rubik glitch", system-ui;
+}
+
+p {
+    text-wrap: pretty;
+    margin-bottom: 1rem;
+    font-family: "Bitter", serif;
+    font-size: 1.2rem;
+}
+
+nav {
+    height: 100px;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        font-size: 3rem;
+        height: 100%;
+        align-items: center;
+
+        li {
+            cursor: pointer;
+            font-family: "Rubik glitch", system-ui
+        }
+    }
+}
