@@ -71,6 +71,12 @@ body {
         padding-top: 76px;
         padding-bottom: 50px;
         padding-inline: 20%;
+        min-height: 100svh;
+
+        @media (max-width: 950px) {
+            padding-inline: 5%;
+            padding-top: 40px;
+        }
 
         h1 {
             font-size: 4rem;
@@ -90,6 +96,10 @@ body {
             font-family: "Bitter", serif;
             font-size: 1.2rem;
         }
+
+        a {
+            color: inherit;
+        }
     }
 }
 
@@ -107,6 +117,10 @@ p {
 
 nav {
     height: 100px;
+
+    @media (max-width: 700px) {
+        height: fit-content;
+    }
     ul {
         display: flex;
         justify-content: space-around;
@@ -114,9 +128,36 @@ nav {
         height: 100%;
         align-items: center;
 
+        @media (max-width: 700px) {
+            font-size: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+
+            li {
+                width: 40%;
+                padding-block: 10px;
+            }
+        }
+
         li {
             cursor: pointer;
-            font-family: "Rubik glitch", system-ui
+            font-family: "Rubik glitch", system-ui;
+
+            a {
+                text-decoration: none;
+
+                &:visited {
+                    color: inherit;
+                }
+            }
+
+            &:not(a) {
+                cursor: not-allowed;
+            }
+
+            &#change-color {
+                cursor: pointer;
+            }
         }
     }
 }

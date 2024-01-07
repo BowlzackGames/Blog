@@ -21,6 +21,15 @@ const colorPalettes = [
     }, {
         primary: "#000",
         secondary: "#8CFF98"
+    }, {
+        primary: "#2E4057",
+        secondary: "#F4D35E"
+    }, {
+        primary: "#DA4167",
+        secondary: "#F6D8AE"
+    }, {
+        primary: "#8F3985",
+        secondary: "#CEA2AC"
     }
 ];
 
