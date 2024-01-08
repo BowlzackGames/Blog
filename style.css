@@ -163,8 +163,8 @@ nav {
             &#change-color {
                 cursor: pointer;
 
-                :hover {
-                    filter: invert(30);
+                &:hover {
+                    transform: scale(1.4) rotate(360deg);
                 }
             }
         }
