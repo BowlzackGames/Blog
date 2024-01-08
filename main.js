@@ -30,6 +30,33 @@ const colorPalettes = [
     }, {
         primary: "#8F3985",
         secondary: "#CEA2AC"
+    }, {
+        primary: '#000',
+        secondary: '#F29559',
+    }, {
+        primary: '#0B3954',
+        secondary: '#E0FF4F',
+    }, {
+        primary: '#2E294E',
+        secondary: '#FFD400'
+    }, {
+        primary: '#D90368',
+        secondary: '#EADEDA'
+    }, {
+        primary: '#820263',
+        secondary: '#EADEDA'
+    }, {
+        primary: '#B57F50',
+        secondary: '#4B543B'
+    }, {
+        primary: '#6B0504',
+        secondary: '#FBFFFE'
+    }, {
+        primary: '#E6AF2E',
+        secondary: '#A3320B'
+    }, {
+        primary: '#E6AF2E',
+        secondary: '#6B0504'
     }
 ];
 
