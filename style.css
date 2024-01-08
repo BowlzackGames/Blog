@@ -70,7 +70,7 @@ body {
         flex-direction: column;
         padding-top: 76px;
         padding-bottom: 50px;
-        padding-inline: 20%;
+        padding-inline: 10% 20%;
         min-height: 100svh;
 
         @media (max-width: 950px) {
@@ -84,10 +84,12 @@ body {
 
         h2 {
             font-size: 3rem;
+            padding-bottom: 0.5rem;
         }
 
         h3 {
             font-size: 2rem;
+            padding-bottom: 0.5rem;
         }
 
         p {
@@ -142,13 +144,16 @@ nav {
         li {
             cursor: pointer;
             font-family: "Rubik glitch", system-ui;
+            transition: transform 0.3s ease-in;
 
             a {
                 text-decoration: none;
+                color: inherit;
+                transform: scale(1);
+            }
 
-                &:visited {
-                    color: inherit;
-                }
+            &:hover {
+                transform: scale(1.2);
             }
 
             &:not(a) {
@@ -157,6 +162,10 @@ nav {
 
             &#change-color {
                 cursor: pointer;
+
+                :hover {
+                    filter: invert(30);
+                }
             }
         }
     }
